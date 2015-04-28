@@ -12,6 +12,12 @@ Run `grunt serve:build` for building and `grunt serve:default` for preview.
 Running `grunt serve:test` will run the unit tests with karma.
 
 
+## Author
+
+    name: "Hancoson",
+    email: "hancoson@163.com",
+    url: "https://vso.pw"
+
 
 ## Directory structure
 
