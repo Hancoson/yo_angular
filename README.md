@@ -14,9 +14,9 @@ Running `grunt serve:test` will run the unit tests with karma.
 
 ## Author
 
-    name: "Hancoson",
-    email: "hancoson@163.com",
-    url: [vso](https://vso.pw)
+name: "Hancoson",
+email: "hancoson@163.com",
+url: [vso](https://vso.pw)
 
 
 ## Directory structure
