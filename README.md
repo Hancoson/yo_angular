@@ -5,7 +5,7 @@ version 0.11.1.
 
 ## Build & development
 
-Run `grunt serve:build` for building and `grunt serve:default` for preview.
+Run `grunt serve:build` for building and `grunt serve:dist` for preview.
 
 ## Testing
 
