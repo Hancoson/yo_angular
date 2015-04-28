@@ -36,6 +36,8 @@ url: [vso](https://vso.pw)
     │   ├── layout          //common images
     │   ├── pages           //pages images
     ├── views               //pages
+    │   ├── layout          //page structure
+    │   ├── pages           //service pages
     ├── scripts             //javascript
     │   ├── layout          //page structure
     │   ├── pages           //service code
