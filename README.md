@@ -31,13 +31,13 @@ url: [vso](https://vso.pw)
 ├── test	
 └── app                     //code
     ├── index.html          //index
-    ├── 404.html            //404
     ├── images              //images
     │   ├── layout          //common images
     │   ├── pages           //pages images
     ├── views               //pages
     │   ├── layout          //page structure
     │   ├── pages           //service pages
+    │
     ├── scripts             //javascript
     │   ├── layout          //page structure
     │   ├── pages           //service code
