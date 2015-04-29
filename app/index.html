@@ -12,7 +12,8 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/layout/reset.css">
+    <link rel="stylesheet" href="styles/layout/main.css">
     <!-- endbuild -->
 </head>
 
@@ -20,57 +21,51 @@
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
+    <div ui-view="header"></div>
+    <div class="container main clearfix">
+        <div ui-view=""></div>
+    </div>
+    <div ui-view="footer"></div>
     <!-- Add your site or application content here -->
-    <div class="header">
-        <div class="navbar navbar-default" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-
-                    <a class="navbar-brand" href="#/">ng</a>
-                </div>
-
-                <div class="collapse">
-
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#/">Home</a>
-                        </li>
-                        <li><a ng-href="#/about">About</a>
-                        </li>
-                        <li><a ng-href="#/">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+    <!--<div class="header">
+        <div class="container">
+            <div class="logo fl">
+                <a href="#/">TreeBrearUI</a>
             </div>
+            <ul id="J_nav" class="fr">
+                <a href="/ui/index">
+                    <li class="act">首页</li>
+                </a>
+                <a href="/ui/css">
+                    <li>CSS</li>
+                </a>
+                <a href="/ui/js">
+                    <li>Javascript插件</li>
+                </a>
+            </ul>
         </div>
     </div>
-
-    <div class="container">
-        <div ng-view=""></div>
+    <div class="container main clearfix">
+        <div ui-view=""></div>
     </div>
 
     <div class="footer">
         <div class="container">
-            <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+            <p>&copy; Hancoson</p>
         </div>
-    </div>
+    </div>-->
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
-    <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/main.js"></script>
-    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/layout/app.js"></script>
+    <script src="scripts/layout/service.js"></script>
     <!-- endbuild -->
+    <!--<script src="scripts/pages/main/mainCtrl.js"></script>-->
 </body>
 
 </html>

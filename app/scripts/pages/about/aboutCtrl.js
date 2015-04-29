@@ -1,11 +1,5 @@
-'use strict';
-
 /**
- * @ngdoc function
- * @name ngApp.controller:AboutCtrl
- * @description
- * # AboutCtrl
- * Controller of the ngApp
+ * Created by Hancoson on 15-4-28.
  */
 angular.module('ngApp')
   .controller('AboutCtrl', function ($scope) {

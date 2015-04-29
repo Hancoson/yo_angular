@@ -1,11 +1,5 @@
-'use strict';
-
 /**
- * @ngdoc function
- * @name ngApp.controller:MainCtrl
- * @description
- * # MainCtrl
- * Controller of the ngApp
+ * Created by Hancoson on 15-4-28.
  */
 angular.module('ngApp')
   .controller('MainCtrl', function ($scope) {
