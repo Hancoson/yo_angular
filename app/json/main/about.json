@@ -1,5 +1,19 @@
 [
     {
+
+        "msg_name": "Hancoson",
+        "msg": {
+            "short1":"cai1",
+            "short2":"cai2",
+            "short3":"cai3"
+        }
+
+    },
+
+    {
+        "u_id": "5"
+    },
+    {
         "id": "1",
         "name": "Json",
         "age": "32"
@@ -18,13 +32,5 @@
         "id": "4",
         "name": "jQuery",
         "age": "30"
-    },
-    {
-        "masage": [
-            {
-                "name": "Hancoson",
-                "msg": "This is introduce"
-            }
-        ]
     }
 ]

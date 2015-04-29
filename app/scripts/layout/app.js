@@ -57,13 +57,5 @@ angular.module('ngApp', ['ui.router'])
 
             });
 
-        /*
-                    .state('/about', {
-                        templateUrl: 'views/about.html',
-                        controller: 'AboutCtrl'
-                    })
-                $urlRouterProvider
-                    .otherwise({
-                        redirectTo: '/'
-                    });*/
+
     });
