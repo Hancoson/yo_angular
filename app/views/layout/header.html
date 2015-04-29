@@ -1,17 +1,17 @@
 <div class="header">
-    <div class="container">
-        <div class="logo fl">
-            <a href="/">Yo_angular</a>
+    <div class="container" ng-controller="mainCtrl">
+        <div class="logo fl" ng-repeat="logo in main">
+            <a href="/">{{logo.logo}}</a>
         </div>
-        <ul id="J_nav" class="fr">
+        <ul id="J_nav" class="fr" ng-repeat="nav in main">
             <a ng-href="/">
-                <li>首页</li>
+                <li>{{nav.nav.li1}}</li>
             </a>
             <a ng-href="#/about">
-                <li>关于</li>
+                <li>{{nav.nav.li2}}</li>
             </a>
             <a ng-href="#/">
-                <li>ABC</li>
+                <li>{{nav.nav.li3}}</li>
             </a>
         </ul>
     </div>
