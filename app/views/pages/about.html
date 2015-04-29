@@ -1,1 +1,17 @@
-<p>This is the about view.</p>
+<p>about</p>
+<div ng-controller="aboutCtrl">
+   <div ng-repeat="tb in tableDate"></div>
+    <table width="100%">
+       <tr>
+           <th>ID</th>
+           <th>NAME</th>
+           <th>AGE</th>
+       </tr>
+        <tr ng-repeat="tb in tableDate">
+            <td>{{tb.id}}</td>
+            <td>{{tb.name}}</td>
+            <td>{{tb.age}}</td>
+        </tr>
+    </table>
+
+</div>
