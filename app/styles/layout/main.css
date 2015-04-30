@@ -1,12 +1,14 @@
 /**
- * Created by Hancoson on 15-4-28.
- */
+* Created by Hancoson on 15-4-28.
+*/
+
 body {
     padding: 0;
     background: #eee
 }
 /* Everything but the jumbotron gets side spacing for mobile first views */
-.container{
+
+.container {
     position: relative;
     width: 98%;
     height: auto;
@@ -25,10 +27,12 @@ body {
     top: 0;
     left: 0;
 }
-.header ul li{
+
+.header ul li {
     float: left;
     margin-left: 10px;
 }
+
 .header a {
     text-decoration: none;
     color: #fff
@@ -43,12 +47,13 @@ body {
     border-top: 1px solid #e5e5e5;
     font-size: 12px
 }
-.footer a{
+
+.footer a {
     text-decoration: none;
     color: #888
 }
-
 /* Custom page main */
-.main{
+
+.main {
     margin-top: 50px
 }

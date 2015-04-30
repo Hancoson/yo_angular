@@ -13,7 +13,7 @@ angular.module('ngApp', ['ui.router'])
 
             .state('home', {
                 //templateUrl: 'views/main.html',
-                //controller: 'MainCtrl'
+                controller: 'MainCtrl',
                 url: '',
                 views: {
                     '': {
@@ -32,7 +32,7 @@ angular.module('ngApp', ['ui.router'])
             })
             .state('about', {
                 //templateUrl: 'views/main.html',
-                //controller: 'MainCtrl'
+                controller: 'aboutCtrl',
                 url: '/about',
                 views: {
                     '': {
@@ -48,17 +48,33 @@ angular.module('ngApp', ['ui.router'])
                 }
 
 
+            })
+            .state('about/detail', {
+                //templateUrl: 'views/main.html',
+                controller: 'aboutCtrl',
+                url: '/about/:id',
+                views: {
+                    '': {
+                        //template: 'hello world'
+                        templateUrl: 'views/pages/detail.html'
+                    },
+                    'header': {
+                        templateUrl: 'views/layout/header.html'
+                    },
+                    'footer': {
+                        templateUrl: 'views/layout/footer.html'
+                    }
+                }
+
+
             });
-//        $urlRouterProvider
-//            .otherwise('404', {
-//                url: '/404',
-//
-//                templateUrl: 'views/layout/404.html'
-//
-//            });
+        $urlRouterProvider
+            .otherwise('/404', {
+                url: '/404',
+
+                templateUrl: 'views/layout/header.html'
+
+            });
 
 
-    })
-.run(function($state) {
-  $state.go('home'); //make a transition to movies state when app starts
-});
+    });

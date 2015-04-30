@@ -68,7 +68,7 @@ module.exports = function (grunt) {
       options: {
         port: 8001,
         // Change this to '0.0.0.0' to access the server from outside.
-        hostname: '0.0.0.0',
+        hostname: 'localhost',
         livereload: 45729
       },
       livereload: {
@@ -151,6 +151,7 @@ module.exports = function (grunt) {
 
     // Add vendor prefixed styles
     autoprefixer: {
+        //自动启动浏览器
       options: {
         browsers: ['last 1 version']
       },
