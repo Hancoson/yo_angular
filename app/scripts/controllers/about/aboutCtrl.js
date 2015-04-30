@@ -2,7 +2,6 @@
  * Created by Hancoson on 15-4-28.
  */
 angular.module('ngApp')
-    //.controller('aboutCtrl', ['$scope', 'service', '$http'],function ($scope, service, $http) {
     .controller('aboutCtrl', function ($scope, $http) {
         //var config = {params:{u_id: '1'}};
         //var url = host.dev;
@@ -10,6 +9,14 @@ angular.module('ngApp')
         $http.get(url).success(function (data) {
             $scope.tableDate = data;
         })
+    });
 
+
+/*.controller('aboutCtrl', function ($scope, appService) {
+    console.log(appService);
+    appService.aboutURL(function (params) {
+        $scope.results = params.data;
 
     });
+
+});*/

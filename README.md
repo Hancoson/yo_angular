@@ -39,8 +39,8 @@ url: [vso](https://vso.pw)
     │   ├── pages           //service pages
     │
     ├── scripts             //javascript
-    │   ├── layout          //page structure
-    │   ├── pages           //service code
+    │   ├── services        //angular services
+    │   ├── controllers     //angular controllers
     │   ├── ui              //ui
     └── styles              //style
         ├── layout          //Box Style

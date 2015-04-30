@@ -49,13 +49,16 @@ angular.module('ngApp', ['ui.router'])
 
 
             });
-        $urlRouterProvider
-            .otherwise('404', {
-                url: '/404',
+//        $urlRouterProvider
+//            .otherwise('404', {
+//                url: '/404',
+//
+//                templateUrl: 'views/layout/404.html'
+//
+//            });
 
-                templateUrl: 'views/layout/404.html'
 
-            });
-
-
-    });
+    })
+.run(function($state) {
+  $state.go('home'); //make a transition to movies state when app starts
+});

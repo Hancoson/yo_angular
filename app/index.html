@@ -17,7 +17,7 @@
     <!-- endbuild -->
 </head>
 
-<body ng-app="ngApp" ng-controller="service">
+<body ng-app="ngApp">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -31,22 +31,17 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-    <script src="bower_components/oclazyload/dist/ocLazyLoad.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
-    <script src="scripts/layout/app.js"></script>
-    <script src="scripts/layout/service.js"></script>
+    <script src="scripts/services/app.js"></script>
+    <script src="scripts/services/service.js"></script>
 
-    <script src="scripts/pages/main/mainCtrl.js"></script>
-    <script src="scripts/pages/about/aboutCtrl.js"></script>
+    <script src="scripts/controllers/main/mainCtrl.js"></script>
+    <script src="scripts/controllers/about/aboutCtrl.js"></script>
     <!-- endbuild -->
 </body>
 
