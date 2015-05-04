@@ -51,6 +51,10 @@ module.exports = function (grunt) {
       gruntfile: {
         files: ['Gruntfile.js']
       },
+      less: {
+        files: "<%= yeoman.app %>/styles/**",
+        tasks: ["less"]
+      },
       livereload: {
         options: {
           livereload: '<%= connect.options.livereload %>'
@@ -62,7 +66,27 @@ module.exports = function (grunt) {
         ]
       }
     },
-
+    //less
+    less: {
+      layout: {
+        options: {
+          paths: ["style"],
+          yuicompress: true
+        },
+        files: {
+          "<%= yeoman.app %>/styles/layout/index.css": "<%= yeoman.app %>/styles/layout/*.less"
+        }
+      },
+      pages: {
+        options: {
+          paths: ["style"],
+          yuicompress: true
+        },
+        files: {
+          "<%= yeoman.app %>/styles/pages/index.css": "<%= yeoman.app %>/styles/pages/*.less"
+        }
+      }
+    },
     // The actual grunt server settings
     connect: {
       options: {
@@ -73,7 +97,8 @@ module.exports = function (grunt) {
       },
       livereload: {
         options: {
-          open: true,
+          //open: true,
+          oper:false,
           middleware: function (connect) {
             return [
               connect.static('.tmp'),
@@ -396,6 +421,7 @@ module.exports = function (grunt) {
       'concurrent:server',
       'autoprefixer:server',
       'connect:livereload',
+      'less',
       'watch'
     ]);
   });

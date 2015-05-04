@@ -6,7 +6,7 @@ angular.module('ngApp')
         //var config = {params:{u_id: '1'}};
         //var url = host.dev;
 
-        var url = 'http://192.168.8.23:8001/json/main/about.json';
+        var url = 'http://localhost:8001/json/main/about.json';
         $http.get(url).success(function (data) {
             $scope.tableDate = data
 
