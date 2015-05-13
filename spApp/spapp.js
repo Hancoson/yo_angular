@@ -1,5 +1,5 @@
 /**
- * Created by jyo on 15-3-26.
+ * Created by Hancoson on 15-3-26.
  */
 angular.module('spApp', ['ui.router', 'oc.lazyLoad', 'ngResource', 'lodash']);
 

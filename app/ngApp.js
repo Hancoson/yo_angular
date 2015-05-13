@@ -1,5 +1,5 @@
 /**
- * Created by jyo on 15-3-17.
+ * Created by Hancoson on 15-3-17.
  */
 angular.module('kaowoApp', ['ui.router','ngAnimate','oc.lazyLoad','ngResource','lodash','ngSanitize']);
 angular.module('kaowoApp')

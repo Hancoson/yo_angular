@@ -1,5 +1,5 @@
 /**
- * Created by jyo on 15-3-21.
+ * Created by Hancoson on 15-3-21.
  */
 angular.module('kaowoApp')
     .controller('lwtCtrl', function ($scope) {

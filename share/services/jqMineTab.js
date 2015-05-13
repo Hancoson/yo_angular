@@ -1,5 +1,5 @@
 /**
- * Created by jyo on 15-4-17.
+ * Created by Hancoson on 15-4-17.
  */
 (function () {
     angular.module('share').factory('jqMineTab', ['$resource', '$location', function ($r, $l) {

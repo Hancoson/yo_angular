@@ -1,5 +1,5 @@
 /**
- * Created by jyo on 15-4-20.
+ * Created by Hancoson on 15-4-20.
  */
 module.exports = function(grunt) {
     grunt.config.set('coffee', {

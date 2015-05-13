@@ -1,5 +1,5 @@
 /**
- * Created by jyo on 15-3-19.
+ * Created by Hancoson on 15-3-19.
  */
 angular
     .module('kaowoApp')

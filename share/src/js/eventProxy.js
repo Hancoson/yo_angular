@@ -607,5 +607,5 @@
 
     return EventProxy;
 });/**
- * Created by jyo on 15-4-17.
+ * Created by Hancoson on 15-4-17.
  */
