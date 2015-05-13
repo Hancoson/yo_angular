@@ -1,6 +1,12 @@
-node_modules
-dist
-.tmp
-.idea
-.sass-cache
-bower_components
+# Created by .gitignore support plugin (hsz.mobi)
+.idea/
+node_modules/
+app/**/*.css
+spApp/**/*.css
+share/partial/mine-partial/mineCtrl.js
+share/partial/mine-partial/mineCtrl.js.map
+share/partial/mine-partial/mineCtrl.map
+
+dist/
+
+bower_components/

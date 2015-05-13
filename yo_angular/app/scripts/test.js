@@ -7,16 +7,11 @@
           userInfo: {
             url: domains.api + '/v1/user_info/:u_id'
           },
-          tumblr: {
-            url: domains.api + '/v1/user/tumblr/:u_id'
+          userInfo1: {
+            url: domains.api + '/v1/user_info/:u_id'
           },
-          tags: {
-            url: domains.api + '/v1/tags/:u_id'
-          }
-        }),
-        comments: $r('', {}, {
-          listGet: {
-            url: domains.api + '/v1/comments/:u_id/0/5'
+          userInfo2: {
+            url: domains.api + '/v1/user_info/:u_id'
           }
         })
       };
