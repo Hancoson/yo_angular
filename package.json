@@ -4,11 +4,11 @@
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "ilife5/generator-avalon",
+  "repository": "yo_angular",
   "author": {
     "name": "star",
     "email": "hancoson@q63.com",
-    "url": "https://github.com/ilife5"
+    "url": "https://github.com/Hancoson/yo_angular"
   },
   "engines": {
     "node": ">=0.10.0"
