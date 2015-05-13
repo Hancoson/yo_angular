@@ -1,0 +1,55 @@
+<div id="recruit" style="width: 100%">
+    <header>
+        <img ng-repeat="img in Datas.imgs" ng-src="{{img.url}}" alt=""
+             imageonload
+             show-breath="sty"
+
+                />
+    </header>
+    <div id="thanks" ng-show="sty.thanksShow">
+        <h4>
+            感谢您的申请
+        </h4>
+        <h5>
+            工作人员将会与您联系，协助您认证账号。
+        </h5>
+    </div>
+
+    <div id="pro-form"  ng-show="sty.formshow" >
+        <div>
+            <h3>
+                立即申请
+            </h3>
+        </div>
+
+        <div class="input-form">
+            <label for="proname">姓名</label>
+            <input type="text"
+                   ng-model="Datas.formdata.name"
+                   id="proname" name="proname" />
+        </div>
+        <div class="input-form">
+            <label for="proname">手机</label>
+            <input type="tel"
+                   ng-model="Datas.formdata.phone"
+                   id="prophone" name="prophone">
+        </div>
+        <div class="input-form">
+            <label for="proname">您的专长介绍</label>
+            <textarea  id="prosummary"
+                       ng-model="Datas.formdata.summary"
+                       name="prosummary" style="height:100px;">    </textarea>
+
+        </div>
+         <div class="input-form" style="padding-bottom: 30px;padding-top: 30px">
+            <div class="btn"
+                 style="width: 50%"
+                 ng-click="Btn.submit(Datas.formdata)">
+                提交
+            </div>
+        </div>
+
+    </div>
+    <a name="anchor"></a>
+
+</div>

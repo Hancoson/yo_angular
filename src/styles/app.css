@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'iconfont';
+  src: url('../../iconfont/iconfont.eot');
+  src: url('../../iconfont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../../iconfont/iconfont.woff') format('woff'), /* chrome、firefox */ url('../../iconfont/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('../../iconfont/iconfont.svg#iconfont') format('svg');
+  
+  /* IE9*/
+  /* iOS 4.1- */
+}
+.clear {
+  clear: both;
+}
+.container a.callnow:active {
+  color: none;
+  -webkit-user-select: none;
+}
+.container a.callnow:active,
+.container a.callnow:hover {
+  webkit-touch-callout: none;
+}
+.container img {
+  width: 100%;
+}
+.container .content .intro {
+  border-top: 1px solid #999998;
+  padding-top: 25px;
+  margin: 0 20px;
+  font-size: 14px;
+}
+.container .content i.icon-tag {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.container .content i.icon-tag:before {
+  content: "\e618";
+}
+.container .content > .title {
+  padding: 0  4%;
+}
+.container .content .title {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.container .content .title i {
+  font-size: 18px;
+}
+.container .content .card-list .card {
+  position: relative;
+  margin-bottom: 15px;
+}
+.container .content .card-list .card p {
+  font-size: 12px;
+}
+.container .content .card-list .card span.goodat {
+  background: #959595;
+  color: #fff;
+  border-radius: 4px;
+  padding: 2px 2px;
+  margin-right: 5px;
+}
+.container .content .card-list .card span.goodat i {
+  font-size: 10px;
+  margin-left: 2px;
+}
+.container .content .card-list .card img.avatar {
+  float: left;
+  margin-top: 6px;
+  border-radius: 6px;
+  max-height: 64px;
+  max-width: 63px;
+}
+.container .content .card-list .card .row.describe {
+  margin-top: 12px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #999;
+}
+.container .content .card-list .card .row.sub {
+  border-bottom: 1px solid #999;
+}
+.container .content .card-list .card .row.sub .add {
+  max-width: 250px;
+  margin-top: 12px;
+  margin-left: 10px;
+  font-size: 14px;
+  float: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 72%;
+}
+.container .content .card-list .card .row.sub b {
+  font-size: 24px;
+}
+.container .content .card-list .card .content {
+  background-image: url(http://ad-ikaowo.qiniudn.com/certi-card_02.jpg);
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  margin-top: 0px;
+  padding: 0  9%;
+  padding-bottom: 5px;
+}
+.container .content .card-list .card .content .badge {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  right: 0;
+  top: -2px;
+  padding-right: 2.2%;
+}

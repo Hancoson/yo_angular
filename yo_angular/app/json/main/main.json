@@ -1,0 +1,13 @@
+[
+    {
+
+        "logo": "Yo_angular",
+        "nav": {
+            "li1":"Home",
+            "li2":"About",
+            "li3":"Other"
+        },
+        "footer":"Hancoson"
+
+    }
+]

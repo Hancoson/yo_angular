@@ -1,48 +1,22 @@
-# yo_angular
+# kwoh5
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.11.1.
-
-## Build & development
-
-Run `grunt serve:build` for building and `grunt serve:dist` for preview.
-
-## Testing
-
-Running `grunt serve:test` will run the unit tests with karma.
-
-
-## Author
-
-name: "Hancoson",
-email: "hancoson@163.com",
-url: [vso](https://vso.pw)
-
-
-## Directory structure
+## 目录结构
 
 ```
 ├── README.md               
-├── bower.json            
-├── package.json        
-├── Gruntfile.js      
-├── node_modules
-├── bower_components
-├── test	
-└── app                     //code
-    ├── index.html          //index
-    ├── images              //images
-    │   ├── layout          //common images
-    │   ├── pages           //pages images
-    ├── views               //pages
-    │   ├── layout          //page structure
-    │   ├── pages           //service pages
-    │
-    ├── scripts             //javascript
-    │   ├── services        //angular services
-    │   ├── controllers     //angular controllers
-    │   ├── ui              //ui
-    └── styles              //style
-        ├── layout          //Box Style
-        ├── pages           //Business style
+├── bower.json
+├── bower_components	
+└── src                     //源码
+    ├── scripts             //脚本
+    │   ├── filters         //过滤器
+    │   ├── layout          //页面结构
+    │   ├── pages           //业务代码
+    │   ├── ui              //ui组件
+    │   ├── util            //工具代码
+    │   └── vendor          //第三方（建议通过bower获取）
+    └── styles              //样式
+        ├── components      //组件样式
+        ├── layout          //框架样式
+        ├── pages           //业务样式
+        └── vendor          //第三方（建议通过bower获取）
 ```
