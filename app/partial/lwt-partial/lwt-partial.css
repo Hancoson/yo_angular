@@ -1,0 +1,15 @@
+body {
+  margin: 0 0 0 0;
+}
+#lwt .lwt {
+  background-color: #faa801;
+  padding-right: 0;
+  padding-left: 0;
+}
+#lwt .lwt img {
+  width: 100%;
+  display: block;
+}
+#lwt .lwt img:not(:first-child) {
+  margin-top: -4px;
+}
