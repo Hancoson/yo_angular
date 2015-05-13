@@ -1,0 +1,16 @@
+<style type="text/css">
+    .putDown{
+        margin-bottom: -66px;
+    }
+</style>
+<div id="lwt">
+
+    <div class="container lwt">
+        <div class="header">
+            <img ng-repeat="img in Datas.imgs" ng-src="{{img}}" alt=""
+                    ng-class="{putDown:Datas.imgs.length==($index+1)}"
+                    >
+            <a href="kaowo://user/mainpage?uid=405"><img ng-repeat="img in Datas.imgs_btn" ng-src="{{img}}" alt=""></a>
+        </div>
+        </div>
+</div>

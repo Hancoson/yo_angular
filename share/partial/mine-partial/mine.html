@@ -1,0 +1,212 @@
+<style type="text/css">
+    .min {
+        transform: translateY(100px);
+        margin-top: 0
+    }
+
+    .cut {
+        margin-top: -200px
+    }
+</style>
+<div class="hide">
+    <img ng-src="{{Datas.userInfo.ui_icon_hide}}" />
+</div>
+<!--header-->
+<!--<title>{{Datas.userInfo.nickname}}-主页</title>-->
+<div class="container kw_b_b clearfix"  >
+    <section class="kw_top"   >
+        <!--背景图-->
+        <img
+
+                style="margin-top: -200px"
+                ng-src="{{Datas.userInfo.backcover}}"
+                />
+    </section>
+    <section class="kw_logoBar">
+        <div class="content clearfix">
+            <div class="kw_logo fl">
+                <img ng-src="{{Datas.userInfo.ui_icon}}"
+
+                        />
+            </div>
+            <div class="fl">
+                <div class="kw_name">{{Datas.userInfo.nickname}}</div>
+                <div ng-class="cls.stars[Datas.userInfo.star]"></div>
+                <!--//0颗星(kw_star0),1颗星(kw_star1),2颗星(kw_star2),3颗星(kw_star3),4颗星(kw_star4),5颗星(kw_star5)-->
+            </div>
+        </div>
+        <div class="kw_dataBox">
+
+        </div>
+    </section>
+    <!--<section class="kw_dataBox">
+        <div class="content clearfix">
+            <div class="b3 fl">
+                <span>服务次数</span>
+
+                <p>{{Datas.userInfo.tp_counts}}</p>
+            </div>
+            <div class="b3 fl">
+                <span>服务单价</span>
+
+                <p>{{Datas.userInfo.price}}<span class="s">元/分钟</span>
+                </p>
+            </div>
+            <div class="b3 br0 fl">
+                <span>粉丝数</span>
+
+                <p>{{Datas.userInfo.u_ated_number}}</p>
+            </div>
+
+        </div>
+    </section>-->
+
+</div>
+<div class="container mb_fixed clearfix" id="J_conFixed">
+    <section class="kw_tabbox">
+        <!--tabs btns-->
+        <div class="tabs">
+            <a href="javascript:void(0);" hidefocus="true" id="tumblr" class="active">个人介绍</a>
+            <a href="javascript:void(0);" hidefocus="true">评价</a>
+            <a href="javascript:void(0);" hidefocus="true">动态</a>
+        </div>
+        <div class="swiper-container">
+
+            <ul class="swiper-wrapper">
+                <!--tumblr-->
+                <li class="swiper-slide">
+                    <div class="content clearfix pb10">
+                        <div class="b1_title">专长标签</div>
+                        <p>
+                            <i class="i_tag fl"></i>
+                            <span class="tips"
+                                    ng-repeat="tag in Datas.tags"
+                                    >{{tag}}</span>
+                        </p>
+
+                        <div class="b1_title">个人简介</div>
+                        <div id="summary" ng-bind-html="Datas.userInfo.ui_summary">
+                        </div>
+                        <div
+                                ng-repeat="video in Datas.mp4"
+                                >
+                            <video
+                                    ng-src="{{trustSrc(video.tbr_img)}}"
+                                    controls="controls"
+                                    poster="http://m.ikaowo.com/video/poster/capture-uid{{video.u_id}}.jpg"
+                                    style="width: 100%"
+                                    >
+                            </video>
+                            <p>
+                                {{tbr.tbr_txt}}
+                            </p>
+                        </div>
+                        <div
+                                ng-repeat="tbr in Datas.tumblr">
+                            <img
+                                    ng-src="{{tbr.tbr_img}}"
+                                    />
+
+                            <p>
+                                {{tbr.tbr_txt}}
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <!--咨询评论-->
+                <li class="swiper-slide">
+                    <div class="content clearfix">
+                        <div class="j_commontBox" ng-show="Datas.cmmtList.length>0">
+                            <div class="kw_b2" ng-repeat="cmmt in Datas.cmmtList">
+                                <div class="b2_name">
+                                    {{cmmt.client_name}}&nbsp;&nbsp;
+                                    {{cmmt.c_createtime}}
+                                </div>
+                                <div ng-class="cls.stars[cmmt.m_fraction]" ></div>
+                                <div class="b2_con">{{cmmt.c_contents}}</div>
+                            </div>
+
+                            <div class="kw_b2_b">
+                                网页版仅支持浏览最新的5条内容
+                                <br/>更多内容请下载「靠我」查看
+                            </div>
+                        </div>
+                        <!--//有动态-->
+                        <div id="J_no_commonts" class="kw_noData" ng-show="Datas.cmmtList.length==0">
+                            <img src="http://ad-ikaowo.qiniudn.com/no_commonts.png" />
+                            <p>没有评论</p>
+                        </div>
+                        <!--//无动态-->
+                    </div>
+                </li>
+                <!--个人动态-->
+                <li class="swiper-slide">
+                    <div class="content clearfix">
+                        <div class="j_dynamicBox" ng-show="Datas.poList.length>0">
+                            <div
+                                    ng-repeat="po in  Datas.poList"
+                                    class="kw_b3 clearfix">
+                                <div class="b3_name">{{po.createdAt}}</div>
+                                <p>
+                                    {{po.po_content}}
+                                    <br/>
+
+                                </p>
+                                <div class="b3_bottom fr">
+                                    <div class="fl">
+                                        <div class="i_zan fl"></div>
+                                        {{po.like_count}}
+                                    </div>
+                                    <div class="fr">
+                                        <div class="i_review fl"></div>
+                                        {{po.cmmt_count}}
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="kw_b2_b">
+                                网页版仅支持浏览最新的5条内容
+                                <br/>更多内容请下载「靠我」查看
+                            </div>
+                        </div>
+                        <!--//有动态-->
+                        <div id="J_no_dynamic" class="kw_noData" ng-show="Datas.poList.length==0">
+                            <img src="http://ad-ikaowo.qiniudn.com/no_dynamic.png" />
+                            <p>没有动态</p>
+                        </div>
+                        <!--//无动态-->
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+</div>
+<!--footer-->
+<section class="kw_fixed" id="J_downBox">
+    <div class="kw_downBg"></div>
+    <div class="kw_downBox">
+        <a href="javascript:void(0);" class="i_close" id="J_closeBtn"></a>
+
+        <div class="content clearfix">
+            <div class="logo fl">
+                <img src="share/src/images/kaowo_icon.png"/>
+            </div>
+            <div class="font fl">
+                来「靠我」
+                <br/> 把你的困难丢给我
+            </div>
+            <a
+
+               id="J_loadownApp">
+                <div class="btn fr" ng-click="Btns.schema()">
+                    <div class="icon fl"></div>
+                    马上咨询
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+

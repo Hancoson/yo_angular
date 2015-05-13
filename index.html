@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title id="indexTitle"></title>
+    <link rel="stylesheet/less" href="app/less/certi.less" type="text/css"  data-remove="false"/>
+    <script src="http://cdn.bootcss.com/less.js/1.7.0/less.min.js" data-remove="false"></script>
+    <link rel="stylesheet" href="dist/app.full.min.css"/>
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta  name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=no,minimal-ui" data-concat="false"/>
+
+</head>
+<body >
+<!--<base href="/dist" />-->
+<!--<script src="dist/avalon/avalon.mobile.js" data-concat="false"></script>-->
+
+<!--<script src="dist/avalon/avalon.js" data-concat="false" ></script>-->
+<script src="dist/avalon/lib.full.js" data-concat="false" ></script>
+
+<div ms-controller="tumblr" id="main">
+
+    <!--<div class="header">-->
+        <!--<a href="#!/">mmState</a>  <a href="#!/contacts">contacts</a>  <a href="#!/list">about</a>-->
+        <!--<p class="hint" ms-view="hint"></p>-->
+    <!--</div>-->
+
+    <div ms-view></div>
+
+
+</div>
+
+</body>
+<!--<script type="text/javascript" src="dist/avalon/tumblrCtrl.js"></script>-->
+
+<!--//    require(['tumblrCtrl'], function () {-->
+<!--//    })-->
+<script type="text/javascript">
+    function init()
+    {
+        var timestamp = (new Date()).valueOf();
+
+        //加载js脚本
+        document.write("<script src='app/controllers/tumblrCtrl.js?t="+timestamp+"'><\/script>");
+    }
+    init();
+</script>
+<!--<script type="text/javascript" src="app/controllers/tumblrCtrl.js"></script>-->
+<!--<script type="text/javascript" src="dist/avalon/listState.js"></script>-->
+
+</html>
