@@ -1,6 +1,22 @@
-# kwoh5
+# yo_angular
 
-## 目录结构
+This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
+version 0.11.1.
+
+## Build & development
+
+Run `run-dist` for preview.
+
+## Testing
+
+Running `run-dev` will run the unit tests with karma.
+
+
+## Author
+
+name: "Hancoson",
+email: "hancoson@163.com",
+url: [vso](https://vso.pw)
 
 ```
 ├── README.md               
