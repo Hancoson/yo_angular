@@ -23,8 +23,6 @@ module.exports = function (grunt) {
                 livereload       : 35730,
                 livereloadOnError: false,
                 spawn            : false
-
-
             },
 
             files  : [createFolderGlobs(['*.less','share/**/*.css', '*.html', 'app/*/*.js']), '!_SpecRunner.html', '!.grunt'],

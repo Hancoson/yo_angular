@@ -33,10 +33,11 @@ angular
                     loadOcModal: ['$ocLazyLoad', function ($ocLazyLoad) {
                         return $ocLazyLoad.load(
                             [
+
+                                'spApp/partial/recruit-partial/recruit.css',
                                 'spApp/services/spService.js',
                                 'spApp/directive/imageonload.js',
-                                'spApp/partial/recruit-partial/recruitCtrl.js',
-                                'spApp/partial/recruit-partial/recruit.css'
+                                'spApp/partial/recruit-partial/recruitCtrl.js'
                             ]
                         )
                     }]
